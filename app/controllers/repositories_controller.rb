@@ -12,7 +12,6 @@ class RepositoriesController < ApplicationController
         req.params['q'] = params[:query]
       end
       body = JSON.parse(@resp.body)
-      binding.pry
     #  if @resp.success?
     #    @repos = body["items"]
     #  else
