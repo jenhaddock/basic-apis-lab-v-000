@@ -15,7 +15,6 @@ class RepositoriesController < ApplicationController
       if @resp.success?
         @repos = body["items"]
       end
-
       render 'search'
   end
 end
